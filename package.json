@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "*",
-    "keymirror": "^0.1.1",
+    "keymirror": "*",
     "lodash": "*",
     "moment": "*",
     "prop-types": "*",
