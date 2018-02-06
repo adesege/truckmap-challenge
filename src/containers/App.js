@@ -13,6 +13,11 @@ import { connectProps } from '../redux/connect';
 import Map from './Map';
 
 class App extends PureComponent {
+  componentDidMount() {
+    console.log('Hello From ' + this.props.global.platform);
+    console.log('Some Redux Actions...', this.props.actions);
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -23,10 +28,7 @@ class App extends PureComponent {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'green'
-  }
+  container: StyleSheet.absoluteFillObject
 })
 
 export default connectProps('global')(App);
