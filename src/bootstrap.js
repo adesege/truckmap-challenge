@@ -14,11 +14,9 @@ import App from './containers/App';
 export default function bootstrap(platform) {
   class Challenge extends React.Component {
     componentWillMount() {
-      const store = configureStore();
+      this.store = configureStore();
 
-      this.store = store;
-
-      store.dispatch(globalInit(platform));
+      this.store.dispatch(globalInit(platform));
     }
 
     render() {
