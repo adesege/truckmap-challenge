@@ -22,7 +22,7 @@ export default function bootstrap(platform) {
     render() {
       return (
         <Provider store={this.store}>
-          <App store={this.store} />
+          <App />
         </Provider>
       );
     }
