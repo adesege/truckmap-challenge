@@ -20,13 +20,13 @@ You will build a react-native app that allows users to search through a random l
 - Do the search logic in the client.  There are many algorithm interview questions about data structures you’ll never realistically use at work, but this is a practical way to create an elegant solution that handles a few edge cases.
 - When the user selects a person in the results, put that person on the map at a random location (location bounds are up to you). Each person should be placed randomly when selected.
 - Show a profile card for the person on the map.  The info shown and UI of the card are up to you.
-- Geocode where the user was randomly placed and include that info in the profile.  This is to demonstrate use of network requests with Redux and handling the “No Results” edge case (like if they were placed in water).  Take a look [here](https://services.gisgraphy.com/reversegeocoding/search?format=json&lat=41.88832&lng=-87.623177) for a free geocoding endpoint.
+- Geocode where the user was randomly placed and include some of that info in the profile.  This is to demonstrate use of network requests with Redux and handling the “No Results” edge case (like if they were placed in water).  Take a look [here](https://services.gisgraphy.com/reversegeocoding/search?format=json&lat=41.88832&lng=-87.623177) for a free geocoding endpoint.
 
 ## What We're Looking For
 
-- Modular use of Redux with presentational component/container structure.
+- Modular use of Redux and a presentational component/container structure.
 - Your approach with seperating business logic from the app's main components.
-- You sensibly address the main few edge cases that should come up during testing. Most of these are mentioned in this description.
+- You sensibly address the main few edge cases that should come up during testing.  Most of these are mentioned in this description.
 - Asthetic look-and-feel of the app UI.  We will have design resources available, but there will be times when you'll need to fill in the gaps without outside help.
 
 ## Getting Started
