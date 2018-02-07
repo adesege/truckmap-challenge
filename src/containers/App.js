@@ -15,7 +15,7 @@ import Map from './Map';
 class App extends PureComponent {
   componentDidMount() {
     console.log('Hello From ' + this.props.global.platform);
-    console.log('Some Redux Actions...', this.props.actions);
+    console.log('Some Redux bindActionCreators actions...', this.props.actions);
   }
 
   render() {
