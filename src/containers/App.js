@@ -16,6 +16,8 @@ class App extends PureComponent {
   componentDidMount() {
     console.log('Hello From ' + this.props.global.platform);
     console.log('Some Redux bindActionCreators actions...', this.props.actions);
+
+    this.props.actions.searchAutocomplete('Hello');
   }
 
   render() {
