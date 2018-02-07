@@ -4,7 +4,7 @@ The most important aspects of an interview process are correctly identifying whe
 
 This project is intended to touch a few technologies and concepts TruckMap uses regularly and help us understand how you think about trade-offs between time, usefulness, and simplicity.
 
-We are respectful of your time.  If we’ve requested you do this challenge we’ll pay $200 for any submission in “good faith effort” (meets most requirements), regardless if you’re ultimately hired.
+We are respectful of your time.  If we’ve requested you do this challenge we’ll pay $200 for any submission in good faith effort, regardless if you’re ultimately hired.
 
 ## Project Description
 
