@@ -8,11 +8,11 @@ import {
   Text
 } from 'react-native';
 
-import { connectProps } from '../redux/connect';
+import connect from '../redux/connect';
 
 import MapView from 'react-native-maps';
 
-class AppContainer extends PureComponent {
+class Map extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -45,4 +45,9 @@ const styles = StyleSheet.create({
   map: fill
 })
 
-export default connectProps('search', 'user')(AppContainer);
+const mapState = (state) => ({
+  search: state.state,
+  user: state.user
+})
+
+export default connect(mapState)(Map);

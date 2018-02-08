@@ -8,7 +8,7 @@ import {
   Text
 } from 'react-native';
 
-import { connectProps } from '../redux/connect';
+import connect from '../redux/connect';
 
 import Map from './Map';
 
@@ -33,4 +33,8 @@ const styles = StyleSheet.create({
   container: StyleSheet.absoluteFillObject
 })
 
-export default connectProps('global')(App);
+const mapState = (state) => ({
+  global: state.global
+})
+
+export default connect(mapState)(App);

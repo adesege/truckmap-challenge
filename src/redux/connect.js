@@ -1,12 +1,9 @@
 'use strict';
 
 import { createStore, applyMiddleware, bindActionCreators, compose } from 'redux';
+import { connect as reduxConnect } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
-
-import { connect as reduxConnect } from 'react-redux';
-
-import { pick } from 'lodash';
 
 import { actions, rootReducer } from './index';
 
@@ -20,10 +17,10 @@ const enhancer = compose(
 );
 
 function mapDispatchToProps(dispatch) {
-  const creators = Object.assign({}, ...actions);
+  const actionCreators = Object.assign({}, ...actions);
 
   return {
-    actions: bindActionCreators(creators, dispatch),
+    actions: bindActionCreators(actionCreators, dispatch),
     dispatch
   };
 }
@@ -32,12 +29,6 @@ export function configureStore(initialState = {}) {
   return createStore(rootReducer, initialState, enhancer);
 };
 
-// Not required to use these redux connect abstractions. Plenty of valid reasons not to!
-
-export function connect(selector) {
-  return reduxConnect(selector, mapDispatchToProps);
-}
-
-export function connectProps(...props) {
-  return reduxConnect((state) => pick(state, props), mapDispatchToProps);
+export default function connect(mapStateToProps) {
+  return reduxConnect(mapStateToProps, mapDispatchToProps);
 }
