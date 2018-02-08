@@ -21,6 +21,7 @@ You will build a react-native app that allows users to search through a random l
 - When the user selects a person in the results, put that person on the map at a random location (location bounds are up to you). Each person should be placed randomly when selected.
 - Show a profile card for the person on the map.  The info shown and UI of the card are up to you.
 - Geocode where the user was randomly placed and include some of that info in the profile.  This is to demonstrate use of network requests with Redux and handling the “No Results” edge case (like if they were placed in water).  Take a look [here](https://services.gisgraphy.com/reversegeocoding/search?format=json&lat=41.88832&lng=-87.623177) for a free geocoding endpoint.
+- Feel free to use any additional third-party styling libraries or components
 
 ## What We're Looking For
 
@@ -36,5 +37,5 @@ We recommend getting started by downloading this package (don't fork, please!) a
 ## Submitting
 
 - Replace this `README.md` with any instructions, a few screenshots, assumptions you made, and a few ideas for features you might add if the app was taken any further.
-- Zip and email the repository to us.
+- Zip and email your repository to us.
 - We will provide constructive and timely feedback on your submission with a clear direction around next steps.  Thank you for your time.
