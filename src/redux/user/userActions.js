@@ -1,11 +1,13 @@
-'use strict';
-
-import { find } from 'lodash';
-
 import {
-  USER_SELECT
+  GET_USERS
 } from '../../constants/actions';
+import people from '../../data/people.json';
 
-export function userSelect(user) {
-  return (dispatch, getState) => {}
+export function getUsers() {
+  return (dispatch, getState) => {
+    dispatch({
+      type: GET_USERS,
+      user: people
+    })
+  }
 }
